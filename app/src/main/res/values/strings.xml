@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidClient</string>
+    <string name="action_connect">Connection</string>
+    <string name="title_activity_splash_file">SplashFile</string>
+</resources>

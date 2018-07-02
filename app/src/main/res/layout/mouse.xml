@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mousepad"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_mouse"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left"
+            android:padding="20dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:id="@+id/left"
+            android:onClick="submit"
+            android:background="@drawable/border"
+            />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:onClick="submit"
+            android:padding="20dp"
+            android:background="@drawable/border"
+            android:layout_weight="1"
+            android:id="@+id/right"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Text Here"
+            android:id="@+id/textdata"
+            android:padding="20dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Del"
+            android:onClick="delete"
+            android:padding="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
